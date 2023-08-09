@@ -1,8 +1,8 @@
-# Aulas de Ruby
+# Aulas de GIT e GITHUB
 
 ## Sobre
 
-Essa seção servirá para o aprendizado em Ruby e automação de testes.
+Essa seção servirá para o aprendizado em GIT e GITHUB
 
 ## Objetivo
 
