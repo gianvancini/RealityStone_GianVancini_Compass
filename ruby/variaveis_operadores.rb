@@ -1,3 +1,5 @@
+# tipos de variaveis
+
 variavel = 10
 variavel.class #retorna integer
 
@@ -22,3 +24,14 @@ one_symbol.object_id #retorna onde está na memória
 
 variavel_hash = {course: 'ruby', languag: 'pt-Br'}
 variavel_hash[:course] #retorna ruby
+
+
+# operadores
+
+# soma -> +
+# subtracao -> -
+# divisao -> /
+# multiplicacao -> *
+# exponencial -> **
+# resto -> % 
+
