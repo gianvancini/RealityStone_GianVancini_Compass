@@ -14,6 +14,15 @@ Neste projeto, será desenvolvido uma calculadora com o conceito TDD. Para os te
 OBS: Para rodar o projeto da calculadora é necessário ter o Ruby instalado na máquina. 
 
 Passo a passo:
-1 - Clonar a pasta "calculadora" do GitHub
-2 - Acessar a pasta com o terminal
-3 - Rodar o comando "bundle install" 
+- Clonar a pasta "calculadora" do GitHub
+- Acessar a pasta "calculadora" com o terminal de comandos
+- Rodar o comando "bundle install" 
+
+- Para executar a calculadora, digite no terminal:
+```bash
+    ruby front_calc.rb
+```
+- Para executar os testes, digite no terminal:
+```bash
+    rspec specs\calculadora_spec.rb
+```
