@@ -9,7 +9,7 @@ Esse repositório está sendo utilizado para o acompanhamento e aprendizado na t
 Com o aprendizado do Programa de Bolsas, neste repositório estará meus conhecimentos em Teste e Automação de Testes de software com Ruby.
 
 ## Tecnologias utilizadas
-- Cucumber
+- Git e GitHub
 - Ruby
 
 
