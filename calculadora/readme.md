@@ -14,7 +14,7 @@ Neste projeto, será desenvolvido uma calculadora com o conceito TDD. Para os te
 OBS: Para rodar o projeto da calculadora é necessário ter o Ruby instalado na máquina. 
 
 Passo a passo:
-- Clonar a pasta "calculadora" do GitHub
+- Clonar o repositório "RealityStone_GianVancini_Compass" do GitHub
 - Acessar a pasta "calculadora" com o terminal de comandos
 - Executar no terminal o comando:
 ```bash
