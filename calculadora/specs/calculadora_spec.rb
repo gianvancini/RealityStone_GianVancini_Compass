@@ -33,6 +33,10 @@ describe "Calculadora" do
         it "Deve somar um numero inteiro positivo com um número decimal" do
             expect(calculadora.adicao(7, 5.6)).to eq 12.6
         end
+
+        it "Deve somar um número com uma caractere" do
+            expect(calculadora.adicao(4, "t")).to include "Uma das variaveis informadas não é um número!"
+        end
     end
 
     describe "Subtracao" do
@@ -62,6 +66,10 @@ describe "Calculadora" do
 
         it "Deve subtrair um numero inteiro positivo com um número decimal" do
             expect(calculadora.subtracao(9, 4.6)).to eq 4.4
+        end
+
+        it "Deve subtrair um número com uma caractere" do
+            expect(calculadora.subtracao(4, "t")).to include "Uma das variaveis informadas não é um número!"
         end
     end
 
@@ -93,6 +101,10 @@ describe "Calculadora" do
         it "Deve dividir um numero inteiro positivo com um número decimal" do
             expect(calculadora.divisao(10, 2.4)).to eq 4.17
         end
+
+        it "Deve dividir um número com uma caractere" do
+            expect(calculadora.divisao(4, "t")).to include "Uma das variaveis informadas não é um número!"
+        end
     end
 
     describe "Multiplicacao" do
@@ -123,6 +135,10 @@ describe "Calculadora" do
         it "Deve multiplicar um numero inteiro positivo com um número decimal" do
             expect(calculadora.multiplicacao(5, 2.5)).to eq 12.5
         end
+
+        it "Deve multiplicar um número com uma caractere" do
+            expect(calculadora.multiplicacao(4, "t")).to include "Uma das variaveis informadas não é um número!"
+        end
     end
 
     describe "Radiciacao" do
@@ -140,6 +156,10 @@ describe "Calculadora" do
 
         it "Deve calcular a raiz de um número decimal" do
             expect(calculadora.raiz_quadrada(10.2)).to eq 3.19
+        end
+
+        it "Deve calcular a raiz um caractere" do
+            expect(calculadora.raiz_quadrada("t")).to include "A variavel informada não é um número!"
         end
     end
 
@@ -172,8 +192,12 @@ describe "Calculadora" do
             expect(calculadora.raiz_n(15.2, 2.8)).to eq 2.64
         end
 
-        it "Deve calcular a raiz de com o radicando inteiro positivo e o radical decimal" do
+        it "Deve calcular a raiz com o radicando inteiro positivo e o radical decimal" do
             expect(calculadora.raiz_n(18, 3.2)).to eq 2.47
+        end
+
+        it "Deve calcular a raiz com o radicando inteiro positivo e o radical caractere" do
+            expect(calculadora.raiz_n(4, "t")).to include "Uma das variaveis informadas não é um número!"
         end
     end
 
@@ -205,6 +229,10 @@ describe "Calculadora" do
         it "Deve calcular a potenciação de um número inteiro positivo elevado um número inteiro decimal positivo" do
             expect(calculadora.potenciacao(12, 2.6)).to eq 639.5452
         end
+
+        it "Deve calcular a potenciação de um número inteiro positivo elevado a um caractere" do
+            expect(calculadora.potenciacao(12, "a")).to include "Uma das variaveis informadas não é um número!"
+        end
     end
 
     describe "Fatorial" do
@@ -226,6 +254,10 @@ describe "Calculadora" do
 
         it "Erro ao calcular o fatorial de um numero decimal" do
             expect(calculadora.fatorial(12.5)).to include "Número decimal não tem fatorial!"
+        end
+
+        it "Erro ao calcular o fatorial de um caractere" do
+            expect(calculadora.fatorial("a")).to include "A variavel informada não é um número!"
         end
     end
 
@@ -249,6 +281,10 @@ describe "Calculadora" do
         it "Erro ao calcular o valor de fibonacci para a posiçao informada, informando um decimal" do
             expect(calculadora.fibonacci(12.5)).to include "Digite um número inteiro e positivo"
         end
+
+        it "Erro ao calcular o valor de fibonacci para a posiçao informada, informando um caractere" do
+            expect(calculadora.fibonacci("a")).to include "A variavel informada não é um número!"
+        end
     end
 
     describe "Seno" do
@@ -266,6 +302,10 @@ describe "Calculadora" do
 
         it "Deve calcular o seno de um numero decimal positivo" do
             expect(calculadora.seno(175.3)).to eq 0.0819
+        end
+       
+        it "Erro ao calcular o seno de um caractere" do
+            expect(calculadora.seno("a")).to include "A variavel informada não é um número!"
         end
     end
 
@@ -285,6 +325,10 @@ describe "Calculadora" do
         it "Deve calcular o coseno de um numero decimal positivo" do
             expect(calculadora.coseno(50.9)).to eq 0.6307
         end
+
+        it "Erro ao calcular o coseno de um caractere" do
+            expect(calculadora.coseno("a")).to include "A variavel informada não é um número!"
+        end
     end
 
     describe "Tangente" do
@@ -303,6 +347,10 @@ describe "Calculadora" do
         it "Deve calcular a tangente de um numero decimal positivo" do
             expect(calculadora.tangente(108.23)).to eq -3.0362
         end
+        
+        it "Erro ao calcular a tangente de um caractere" do
+            expect(calculadora.tangente("a")).to include "A variavel informada não é um número!"
+        end
     end
 
     describe "Area Circulo" do
@@ -320,6 +368,10 @@ describe "Calculadora" do
 
         it "Deve calcular area do circulo informando um raio decimal postivo" do
             expect(calculadora.area_circulo(12.5)).to eq 490.87
+        end
+
+        it "Erro ao calcular a area de um circulo passando um caractere" do
+            expect(calculadora.area_circulo("a")).to include "A variavel informada não é um número!"
         end
     end
 end
